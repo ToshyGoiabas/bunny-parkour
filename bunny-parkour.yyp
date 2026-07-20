@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"code","folderPath":"folders/code.yy","name":"code","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"scripts","folderPath":"folders/code/scripts.yy","name":"scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -27,12 +27,17 @@
   },
   "name":"bunny-parkour",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"obj_colision","path":"objects/obj_colision/obj_colision.yy",},},
+    {"id":{"name":"obj_entity_parent","path":"objects/obj_entity_parent/obj_entity_parent.yy",},},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"rm_level","path":"rooms/rm_level/rm_level.yy",},},
+    {"id":{"name":"scpt_main","path":"scripts/scpt_main/scpt_main.yy",},},
+    {"id":{"name":"spr_square_placehoalder","path":"sprites/spr_square_placehoalder/spr_square_placehoalder.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_level","path":"rooms/rm_level/rm_level.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
