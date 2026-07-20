@@ -13,8 +13,8 @@
   ],
   "name":"Room1",
   "parent":{
-    "name":"bunny-parkour",
-    "path":"bunny-parkour.yyp",
+    "name":"rooms",
+    "path":"folders/resource_pack/rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
