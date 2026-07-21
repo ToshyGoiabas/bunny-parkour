@@ -1,3 +1,6 @@
+//Gravidade forçada
+vspd+=grav
+
 //Faz a colisão
 hspd = horizontal_colision(x,y,hspd,obj_colision)
 vspd = vertical_colision(x,y,vspd,obj_colision)
