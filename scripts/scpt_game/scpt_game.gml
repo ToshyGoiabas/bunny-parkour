@@ -28,12 +28,10 @@ function vertical_colision(_x,_y,spd,obj)
 	
 	if(_col)
 	{
-		var _sign = sign(spd)
-		
-		while(!place_meeting(_x,_y+_sign,obj))
+		while(!place_meeting(_x,_y+sign(spd),obj))
 		{
 			//Desconta pixel errado
-			_y+=_sign	
+			_y+=sign(spd)	
 		}
 		
 		//Reseta a velocidade

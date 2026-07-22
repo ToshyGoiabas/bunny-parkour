@@ -4,4 +4,4 @@ vspd = 0
 spd = 0
 spd_max = 1
 grav = 0.45
-grav_max = 6
+grav_max = 8
