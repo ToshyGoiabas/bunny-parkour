@@ -96,6 +96,7 @@ function update_game_inputs()
 	global.inputs.right = max(keyboard_check(vk_right),keyboard_check(ord("D")))
 	global.inputs.left = max(keyboard_check(vk_left),keyboard_check(ord("A")))
 	global.inputs.space = keyboard_check(vk_space)
+	global.inputs.space_pressed = keyboard_check_pressed(vk_space)
 	
 	//Atualiza do gamepad
 	if(gamepad_connect())
@@ -103,13 +104,16 @@ function update_game_inputs()
 		global.gp_inputs.gp_right = gamepad_axis_value(global.gamepad,gp_axislh) > global.gamepad_deadzone
 		global.gp_inputs.gp_left = gamepad_axis_value(global.gamepad,gp_axislh) < -global.gamepad_deadzone
 		global.gp_inputs.gp_face1 = gamepad_button_check(global.gamepad,gp_face1)
+		global.gp_inputs.gp_face1_pressed = gamepad_button_check_pressed(global.gamepad,gp_face1)
 	}
 	
 	else
 	{
 		global.gp_inputs.gp_right = NULL
-		global.gp_inputs.gp_right = NULL
 		global.gp_inputs.gp_left = NULL
-		global.gp_inputs.gp_face1 = NULL
+		global.gp_inputs.gp_face1 = NULL	
+		global.gp_inputs.gp_face1_pressed = NULL
 	}
 }
+
+#macro GRID 24

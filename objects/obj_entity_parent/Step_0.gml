@@ -1,5 +1,7 @@
 //Gravidade forçada
-vspd+=grav
+if(!place_meeting(x,y+1,obj_colision))vspd+=grav
+
+if(vspd >= grav_max) vspd = grav_max
 
 //Faz a colisão
 hspd = horizontal_colision(x,y,hspd,obj_colision)
@@ -9,5 +11,7 @@ vspd = vertical_colision(x,y,vspd,obj_colision)
 x+=hspd
 y+=vspd
 
-//Evita sub-pixel
-y = round(y)
+x = round(x)
+
+//Arredondar pra não gerar putarias
+if(vspd > 0) y = round(y)
