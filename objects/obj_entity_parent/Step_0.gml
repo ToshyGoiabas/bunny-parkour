@@ -11,7 +11,5 @@ vspd = vertical_colision(x,y,vspd,obj_colision)
 x+=hspd
 y+=vspd
 
-x = round(x)
-
 //Arredondar pra não gerar putarias
 if(vspd > 0) y = round(y)
